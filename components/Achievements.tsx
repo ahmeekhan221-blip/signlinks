@@ -78,12 +78,12 @@ const machines: Machine[] = [
   {
     id: 7,
     name: 'Laser Cutting Machine',
-    image: '/Laser Cutting Machine.png',
+    image: '/roland_sg3.jpg',
   },
   {
     id: 8,
     name: 'Laser Welding Machine',
-    image: '/Laser Welding Machine.png',
+    image: '/roland_sg3.jpg',
   },
   {
     id: 9,
