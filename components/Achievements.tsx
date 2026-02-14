@@ -47,18 +47,18 @@ const machines: Machine[] = [
   {
     id: 1,
     name: 'Channel Letter Bending',
-    image: '/Channel_Letter_Bending.png', 
+    image: '/roland_sg3.jpg', 
     
   },
   {
     id: 2,
     name: 'ZPG Fiber Laser',
-    image: '/ZPG Fiber Laser Machine.png',
+    image: '/roland_sg3.jpg',
   },
   {
     id: 3,
     name: 'CNC Router Machine',
-    image: '/CNC Router Machine.png',
+    image: '/roland_sg3.jpg',
   },
   {
     id: 4,
