@@ -259,7 +259,7 @@ const projects = [
     client: "Corporate Landmark",
     scope: "Rooftop Signage",
     category: "Large Format",
-    image: "/download.jfif",
+    image: "/hbl.jpeg",
   },
   {
     title: "HBL Nationwide Branch Branding",
@@ -275,7 +275,7 @@ const projects = [
     client: "Muslim Commercial Bank (MCB)",
     scope: "1,000+ Branches",
     category: "Banking",
-    image: "/download (1).jfif",
+    image: "/hbl.jpeg",
   },
   {
     title: "MCB Islamic Banking Branding",
@@ -283,7 +283,7 @@ const projects = [
     client: "MCB Islamic",
     scope: "Islamic Banking Network",
     category: "Banking",
-    image: "/mcb_p.jfif",
+    image: "/hbl.jpeg",
   },
   {
     title: "Fuel Station & Canopy Fabrication",

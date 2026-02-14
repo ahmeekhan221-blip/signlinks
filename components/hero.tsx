@@ -238,7 +238,7 @@ export default function HeroSection() {
             Complete Signage
             <br />
             Solutions{" "}
-            <span className="bg-gradient-to-r from-cyan-400 via-blue-400 to-indigo-500 bg-clip-text text-transparent">
+            <span className="bg-[#04acec] bg-clip-text text-transparent">
               Since 2005
             </span>
           </motion.h1>
