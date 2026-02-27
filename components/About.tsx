@@ -643,7 +643,7 @@
 
 
 
-
+// simple one 
 
 'use client';
 
@@ -713,11 +713,11 @@ const AboutUs = () => {
         {/* Timeline Section */}
         <TimelineSection />
 
-        {/* Partnership Section */}
+        {/* Partnership Section
         <PartnershipSection />
 
         {/* CTA Section */}
-        <CTASection />
+        {/* <CTASection /> */}
       </motion.div>
     </div>
   );
@@ -735,7 +735,7 @@ const HeaderSection = () => {
         animate={isInView ? { opacity: 1, y: 0 } : {}}
         transition={{ duration: 0.8 }}
       >
-        {/* Logo */}
+        {/* Logo */} 
         <motion.div
           initial={{ opacity: 0, scale: 0.5 }}
           animate={isInView ? { opacity: 1, scale: 1 } : {}}
@@ -744,9 +744,9 @@ const HeaderSection = () => {
         >
           <div className="relative group">
             <div className="absolute inset-0 bg-gradient-to-r from-cyan-500 to-[#1e3a8a] rounded-2xl blur-2xl opacity-20 group-hover:opacity-30 transition-opacity" />
-            <div className="relative bg-white border-2 border-gray-100 shadow-xl rounded-2xl p-4 sm:p-6 md:p-8">
+            <div className="relative  bg-white border-2 border-gray-100 shadow-xl rounded-2xl p-4 sm:p-6 md:p-8">
               <Image
-                src="/signlinkslogo.png"
+                src="/vectorink-vectorizer-result.svg"
                 alt="Sign Links Advertising Logo"
                 width={120}
                 height={80}
@@ -762,7 +762,7 @@ const HeaderSection = () => {
           animate={isInView ? { opacity: 1, scale: 1 } : {}}
           transition={{ duration: 0.6, delay: 0.2 }}
         >
-          About Us
+          About Us 
         </motion.span>
         
         <motion.h1 
@@ -1159,126 +1159,61 @@ const TimelineSection = () => {
   );
 };
 
-// Partnership Section Component
-const PartnershipSection = () => {
-  const ref = useRef(null);
-  const isInView = useInView(ref, { once: true, amount: 0.3 });
-
-  return (
-    <motion.div
-      ref={ref}
-      initial={{ opacity: 0, y: 50 }}
-      animate={isInView ? { opacity: 1, y: 0 } : {}}
-      transition={{ duration: 0.8 }}
-      className="mt-16 sm:mt-20 lg:mt-32 relative"
-    >
-      <div className="absolute inset-0 bg-gradient-to-r from-cyan-500/5 to-[#1e3a8a]/5 rounded-2xl sm:rounded-3xl blur-3xl" />
-      
-      <div className="relative bg-gradient-to-br from-gray-50 to-white border-2 border-gray-100 rounded-2xl sm:rounded-3xl p-6 sm:p-8 md:p-12 lg:p-16 shadow-xl">
-        <div className="max-w-4xl mx-auto text-center">
-          <motion.div
-            initial={{ scale: 0 }}
-            animate={isInView ? { scale: 1 } : {}}
-            transition={{ duration: 0.6, delay: 0.3 }}
-            className="inline-block mb-4 sm:mb-6"
-          >
-            <div className="w-16 h-16 sm:w-20 sm:h-20 md:w-24 md:h-24 rounded-2xl bg-gradient-to-br from-cyan-500 to-[#1e3a8a] flex items-center justify-center mx-auto shadow-xl">
-              <svg className="w-8 h-8 sm:w-10 sm:h-10 md:w-12 md:h-12 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 0z" />
-              </svg>
-            </div>
-          </motion.div>
-
-          <motion.h2
-            initial={{ opacity: 0, y: 20 }}
-            animate={isInView ? { opacity: 1, y: 0 } : {}}
-            transition={{ duration: 0.6, delay: 0.5 }}
-            className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-4 sm:mb-6 px-4"
-          >
-            Strategic Partnerships
-          </motion.h2>
-
-          <motion.p
-            initial={{ opacity: 0, y: 20 }}
-            animate={isInView ? { opacity: 1, y: 0 } : {}}
-            transition={{ duration: 0.6, delay: 0.7 }}
-            className="text-sm sm:text-base md:text-lg lg:text-xl text-gray-600 mb-6 sm:mb-8 leading-relaxed px-4"
-          >
-            With over 20 years of proven expertise, Sign Links Advertising® has built enduring partnerships with global leaders like 3M and GE. This enables us to deliver premium, long-lasting signage using certified materials and cutting-edge LED technologies.
-          </motion.p>
-
-          <motion.div
-            initial={{ opacity: 0, scale: 0.8 }}
-            animate={isInView ? { opacity: 1, scale: 1 } : {}}
-            transition={{ duration: 0.6, delay: 0.9 }}
-            className="inline-flex items-center gap-2 sm:gap-3 bg-gradient-to-r from-cyan-600 to-[#1e3a8a] rounded-full px-6 sm:px-8 py-3 sm:py-4 text-white font-semibold text-sm sm:text-base md:text-lg shadow-lg hover:shadow-xl transition-shadow"
-          >
-            <span>Trusted by Pakistan&apos;s Top Brands</span>
-            <svg className="w-4 h-4 sm:w-5 sm:h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7l5 5m0 0l-5 5m5-5H6" />
-            </svg>
-          </motion.div>
-        </div>
-      </div>
-    </motion.div>
-  );
-};
-
 // CTA Section Component
-const CTASection = () => {
-  const ref = useRef(null);
-  const isInView = useInView(ref, { once: true, amount: 0.5 });
+// const CTASection = () => {
+//   const ref = useRef(null);
+//   const isInView = useInView(ref, { once: true, amount: 0.5 });
 
-  return (
-    <motion.div
-      ref={ref}
-      initial={{ opacity: 0, y: 50 }}
-      animate={isInView ? { opacity: 1, y: 0 } : {}}
-      transition={{ duration: 0.8 }}
-      className="mt-16 sm:mt-20 lg:mt-32 text-center pb-12"
-    >
-      <motion.h2
-        initial={{ opacity: 0, y: 20 }}
-        animate={isInView ? { opacity: 1, y: 0 } : {}}
-        transition={{ duration: 0.6, delay: 0.2 }}
-        className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-4 sm:mb-6 px-4"
-      >
-        Ready to Elevate Your Brand?
-      </motion.h2>
+//   return (
+//     <motion.div
+//       ref={ref}
+//       initial={{ opacity: 0, y: 50 }}
+//       animate={isInView ? { opacity: 1, y: 0 } : {}}
+//       transition={{ duration: 0.8 }}
+//       className="mt-16 sm:mt-20 lg:mt-32 text-center pb-12"
+//     >
+//       <motion.h2
+//         initial={{ opacity: 0, y: 20 }}
+//         animate={isInView ? { opacity: 1, y: 0 } : {}}
+//         transition={{ duration: 0.6, delay: 0.2 }}
+//         className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-4 sm:mb-6 px-4"
+//       >
+//         Ready to Elevate Your Brand?
+//       </motion.h2>
 
-      <motion.p
-        initial={{ opacity: 0, y: 20 }}
-        animate={isInView ? { opacity: 1, y: 0 } : {}}
-        transition={{ duration: 0.6, delay: 0.4 }}
-        className="text-sm sm:text-base md:text-lg lg:text-xl text-gray-600 mb-8 sm:mb-10 max-w-2xl mx-auto px-4"
-      >
-        Partner with us to create standout, durable signage that drives visibility and impact across Pakistan
-      </motion.p>
+//       <motion.p
+//         initial={{ opacity: 0, y: 20 }}
+//         animate={isInView ? { opacity: 1, y: 0 } : {}}
+//         transition={{ duration: 0.6, delay: 0.4 }}
+//         className="text-sm sm:text-base md:text-lg lg:text-xl text-gray-600 mb-8 sm:mb-10 max-w-2xl mx-auto px-4"
+//       >
+//         Partner with us to create standout, durable signage that drives visibility and impact across Pakistan
+//       </motion.p>
 
-      <motion.div
-        initial={{ opacity: 0, scale: 0.8 }}
-        animate={isInView ? { opacity: 1, scale: 1 } : {}}
-        transition={{ duration: 0.6, delay: 0.6 }}
-        className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center items-center px-4"
-      >
-        <motion.button
-          whileHover={{ scale: 1.05 }}
-          whileTap={{ scale: 0.95 }}
-          className="w-full sm:w-auto px-6 sm:px-8 py-3 sm:py-4 bg-gradient-to-r from-cyan-600 to-[#1e3a8a] text-white font-semibold rounded-full text-sm sm:text-base md:text-lg shadow-lg shadow-cyan-500/30 hover:shadow-cyan-500/50 transition-shadow"
-        >
-          Get in Touch
-        </motion.button>
+//       <motion.div
+//         initial={{ opacity: 0, scale: 0.8 }}
+//         animate={isInView ? { opacity: 1, scale: 1 } : {}}
+//         transition={{ duration: 0.6, delay: 0.6 }}
+//         className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center items-center px-4"
+//       >
+//         <motion.button
+//           whileHover={{ scale: 1.05 }}
+//           whileTap={{ scale: 0.95 }}
+//           className="w-full sm:w-auto px-6 sm:px-8 py-3 sm:py-4 bg-gradient-to-r from-cyan-600 to-[#1e3a8a] text-white font-semibold rounded-full text-sm sm:text-base md:text-lg shadow-lg shadow-cyan-500/30 hover:shadow-cyan-500/50 transition-shadow"
+//         >
+//           Get in Touch
+//         </motion.button>
         
-        <motion.button
-          whileHover={{ scale: 1.05 }}
-          whileTap={{ scale: 0.95 }}
-          className="w-full sm:w-auto px-6 sm:px-8 py-3 sm:py-4 bg-white border-2 border-gray-200 text-gray-900 font-semibold rounded-full text-sm sm:text-base md:text-lg hover:border-cyan-500 hover:text-cyan-600 transition-colors shadow-md"
-        >
-          Explore Our Work
-        </motion.button>
-      </motion.div>
-    </motion.div>
-  );
-};
+//         <motion.button
+//           whileHover={{ scale: 1.05 }}
+//           whileTap={{ scale: 0.95 }}
+//           className="w-full sm:w-auto px-6 sm:px-8 py-3 sm:py-4 bg-white border-2 border-gray-200 text-gray-900 font-semibold rounded-full text-sm sm:text-base md:text-lg hover:border-cyan-500 hover:text-cyan-600 transition-colors shadow-md"
+//         >
+//           Explore Our Work
+//         </motion.button>
+//       </motion.div>
+//     </motion.div>
+//   );
+// };
 
 export default AboutUs;

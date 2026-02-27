@@ -197,7 +197,6 @@
 
 
 
-// app/contact/page.tsx
 import { type FC } from 'react';
 import { Mail, Phone, MapPin, Clock } from 'lucide-react';
 
@@ -251,7 +250,7 @@ const ContactPage: FC = () => {
                 <Clock className="h-4 w-4" />
                 Mon–Sat 9:00 AM – 10:00 PM PKT
               </p>
-            </div>
+            </div> 
           </div>
 
           <div className="group relative bg-white/70 dark:bg-gray-900/60 backdrop-blur-xl border border-gray-200/60 dark:border-gray-800/50 rounded-2xl p-8 shadow-xl shadow-gray-200/20 dark:shadow-black/20 transition-all duration-300 hover:-translate-y-1 hover:shadow-2xl hover:shadow-indigo-500/10 sm:col-span-2 lg:col-span-1">

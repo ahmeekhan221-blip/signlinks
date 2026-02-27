@@ -2,13 +2,13 @@ import "@/app/globals.css"
 import type { Metadata } from "next"
 import { Inter } from "next/font/google"
 import { ThemeProvider } from "@/components/theme-provider"
-import type React from "react" // Added import for React
+import type React from "react" 
 
 const inter = Inter({ subsets: ["latin"] })
 
 export const metadata: Metadata = {
-  title: "Digital Marketing Landing Page",
-  description: "A modern digital marketing landing page",
+  title: "Nihal Khan Ghauri",
+  description: "Nihal Khan Ghauri",
 }
 
 export default function RootLayout({

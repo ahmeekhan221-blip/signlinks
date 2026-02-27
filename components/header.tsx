@@ -313,7 +313,7 @@ export default function Header() {
     };
 
     window.addEventListener("scroll", handleScroll, { passive: true });
-    handleScroll(); // initial check
+    handleScroll(); 
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
@@ -342,7 +342,7 @@ export default function Header() {
       >
         <div className="container mx-auto px-5 sm:px-8 lg:px-12 max-w-7xl ">
           <motion.div
-            className={`flex items-center justify-between rounded-full px-6 py-3 transition-all duration-400 shadow-lg ${
+            className={`flex items-center justify-between rounded-full px-6 py-3 transition-all duration-400  ${
               isScrolled ? "bg-white" : "bg-white"
             }`}
             initial={{ y: -80, opacity: 0 }}
@@ -488,12 +488,12 @@ export default function Header() {
                       onClick={() => handleScrollTo(item.href, item.label)}
                       className={`flex items-center justify-center gap-3 p-4 rounded-xl text-lg font-medium transition-all ${
                         isActive
-                          ? "bg-blue-50 text-[#4a90e2] shadow-sm"
+                          ? "bg-blue-50 text-[#4a90e2] smhadow-sm"
                           : "text-gray-800 hover:bg-gray-50 hover:text-[#4a90e2]"
                       }`}
                       initial={{ opacity: 0, x: 30 }}
                       animate={{ opacity: 1, x: 0 }}
-                      transition={{ delay: 0.08 * i + 0.2, duration: 0.5 }}
+                      transition={{ delay: 0.08 * i + 0.2, duration: 0.4 }}
                       whileHover={{ x: 8, scale: 1.02 }}
                       whileTap={{ scale: 0.98 }}
                     >

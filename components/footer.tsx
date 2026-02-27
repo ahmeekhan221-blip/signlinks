@@ -496,7 +496,7 @@ export default function Footer() {
                 <li key={item}>
                   <Link
                     href={`#${item}`}
-                    className="hover:text-white transition-colors duration-300"
+                    className="hover:text-white    transition- duration-300"
                   >
                     {item.charAt(0).toUpperCase() + item.slice(1)}
                   </Link>
@@ -541,7 +541,7 @@ export default function Footer() {
                   
                   className="hover:text-white transition-colors"
                 >
-                 +92-21 350062121 -35120202
+                 +92-21 350062121   -35120202
                 </a>
               </li>
 
